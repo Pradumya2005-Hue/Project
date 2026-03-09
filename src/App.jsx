@@ -16,7 +16,7 @@ const App = () => {
     getproduct();
   }, []);
   return (
-    <div className="w-screen h-screen bg-black-500">
+    <div className="w-screen h-screen overflow-hidden">
       <Navbar />
       <Mainroutes />
     </div>
