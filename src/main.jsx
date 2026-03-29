@@ -4,9 +4,13 @@ import App from "./App.jsx";
 import { ToastContainer } from "react-toastify";
 import { BrowserRouter } from "react-router-dom";
 import { nanoid } from "nanoid";
+import { store } from './store/Store.jsx'
+import { Provider } from 'react-redux'
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
+  <Provider store= {store}>
     <App />
+    </Provider>
     <ToastContainer />
   </BrowserRouter>,
 );
